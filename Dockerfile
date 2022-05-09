@@ -1,5 +1,6 @@
 # Set docker image
 FROM ubuntu:20.04
+LABEL version="0.1.0"
 
 # Skip the configuration part
 ENV DEBIAN_FRONTEND noninteractive

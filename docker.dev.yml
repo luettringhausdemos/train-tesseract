@@ -2,6 +2,7 @@ version: "3"
 
 services:
   app:
+    image: tesseract.5.ocr:0.1
     container_name: train-ocr
     build:
       context: .
