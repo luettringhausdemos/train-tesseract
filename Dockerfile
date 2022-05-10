@@ -41,7 +41,8 @@ ENV TESSDATA_PREFIX=/usr/local/share/tessdata
 RUN pip3 install -r requirements.txt
 
 # Set the locale
-RUN apt-get install -y locales && locale-gen en_US.UTF-8
-ENV LC_ALL=en_US.UTF-8
-ENV LANG=en_US.UTF-8
-ENV LANGUAGE=en_US.UTF-8
+RUN apt-get update
+RUN apt-get install -y locales && locale-gen de_DE.UTF-8
+ENV LC_ALL=de_DE.UTF-8
+ENV LANG=de_DE.UTF-8
+ENV LANGUAGE=de_DE.UTF-8
